@@ -5,7 +5,10 @@ import adelia from "../assets/adelia.png";
 import david from "../assets/david.png";
 import linkedinimg from "../assets/linkedin.png";
 import github from "../assets/github.png";
+import youtube from "../assets/youtube.png";
 import MVP from "../assets/MVP.mp4";
+import nathan from "../assets/nathan.png";
+import jules from "../assets/jules.png";
 import { ref } from "vue";
 
 const team = [
@@ -14,10 +17,10 @@ const team = [
     name: "LAFON Nathan",
     role: "Bachelor 3 - Infra & SI",
     description: "J'ai participé au déploiement du site web et à sa sécurisation.",
-    image: logo,
-    link: "",
-    imglink: "",
-    linkname: "",
+    image: nathan,
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    imglink: youtube,
+    linkname: "Youtube",
   },
   {
     id: 2,
@@ -45,7 +48,7 @@ const team = [
     name: "BESSON Jules",
     role: "Bachelor 2",
     description: "J'ai participé à la réalisation de la partie back-end du projet.",
-    image: logo,
+    image: jules,
     link: "https://github.com/CactusNormal7",
     imglink: github,
     linkname: "GitHub",
@@ -87,7 +90,7 @@ const selectedMember = ref(null);
     <div class="main-title">présentation du projet</div>
     <div class="container-presentation">
       <div class="logo-container">
-        <img src="logo.png" class="logo" @click="playMusic" />
+        <img src="../assets/logo.png" class="logo" @click="playMusic" />
         <audio id="music-player" controls style="display: none">
           <source src="../assets/drums.mp3" type="audio/mpeg" />
         </audio>
